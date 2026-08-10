@@ -1,0 +1,13 @@
+resources:
+  - deployment.yaml
+  - service.yaml
+
+secretGenerator:
+  - name: hello-world-secret
+    literals:
+      - SECRET_MESSAGE=super-secret-value-base
+
+configMapGenerator:
+  - name: hello-world-config
+    files:
+      - index.html
