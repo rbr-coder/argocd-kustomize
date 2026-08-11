@@ -4,10 +4,10 @@ resources:
 patches:
   - path: replicas_count.yaml
 
-namePrefix: prod-
+#namePrefix: prod-
 
-configMapGenerator:
-  - name: hello-world-config
-    files:
-      - index.html
-    behavior: replace
+#configMapGenerator:
+#  - name: hello-world-config
+#    files:
+#      - index.html
+#    behavior: replace
