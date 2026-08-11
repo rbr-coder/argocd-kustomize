@@ -3,3 +3,5 @@ resources:
 
 patches:
   - path: replicas_count.yaml
+
+namePrefix: prod
