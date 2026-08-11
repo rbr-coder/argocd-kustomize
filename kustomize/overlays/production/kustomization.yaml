@@ -3,6 +3,11 @@ resources:
 
 patches:
   - path: replicas_count.yaml
-  - path: index.html
 
 namePrefix: prod-
+
+configMapGenerator:
+  - name: hello-world-config
+    files:
+      - index.html
+    behavior: replace
