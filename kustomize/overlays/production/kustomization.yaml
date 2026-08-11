@@ -5,3 +5,8 @@ patches:
   - path: replicas_count.yaml
 
 namePrefix: prod-
+
+configMapGenerator:
+  - name: hello-world-config
+    files:
+      - index.html
